@@ -15,7 +15,7 @@ email
 number
 
 ### license:
-[]()
+[License](https://raw.githubusercontent.com/Hani-M/Independent-project-2/master/LICENSE)
 
 
 
