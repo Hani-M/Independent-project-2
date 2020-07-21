@@ -3,16 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- booststrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/index.css">
     <title>Birthday</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Akan Names</a>
+        </div>
+      </nav>
+      <div class="container">
 
+        <section>
+          <aside id="info side">
+            <h3>Want to get your Akan Names?</h3>
+            <p>Complete the details below to know your akan name and which day of the week you were born.</p>
 
-
-
-
-
-    <script src="./index.js"></script>
+            <form action="">
+              <div class="form-group top-form">
+                <label for="century" class="labels">century</label><br>
+                <input type="number" class="form-control" placeholder="enter the century" id="century" required min="0" max="30"><br>
+              </div>
+              <div class="form-group">
+                <label for="years" class="labels">years</label><br>
+                <input type="number" placeholder="place the year" class="form-contol" id="year" required min="0" max="100"><br>
+              </div>
+              <div class="form-group">
+                <label for="month" class="labels">months</label><br>
+                <input type="number" placeholder="place the month of the year" class="form-contol" id="month" required min="0" max="12"><br>
+              </div>
+              <div class="form-group">
+                  <label for="monthday" class="labels">day of the month</label><br>
+                  <input type="number" placeholder="place the day of the month" class="form-contol" id="monthday" required min="0" max="12"><br>
+              </div>
+              <form class="radio-button">
+                <input type="radio" class="gender labels" value="male" id="male1" name="male" required>male
+                <input type="radio" class="gender labels" value="female" id="female1" name="female" required>female
+              </form>
+                <br>
+                <a href="#results"><button type="button" name="button" class="btn-primary mb-2" onclick="checkdayoftheweek();">submit</button></a>
+              </form>
+              <h3>key</h3>
+              <p>follow the instrucvtions</p>
+              <ol>
+                <li>year of birth eg (1999 has = 99)</li>
+                <li>century of birth (1999 has = 19)</li>
+              </ol>
+          </aside>
+        </section>
+        <section>
+          <div id="mainpart">
+            <h3>Akan Names</h3>
+            <p>
+              what is akan Names?
+              The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.
+            </p>
+            <ol>
+              <li><strong>days</strong> sunday, monday, tuesday, wednesday, thursday, friday, saturday</li>
+              <li><strong>male names</strong>"kwasi", "kwadwo","kwadwo", "kwabena", "kwaku", "yaw", "kofi", "kwamme"</li>
+              <li><strong>female names</strong>"akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"</li>
+            </ol>
+            <p>thank you for </p>
+          </div>
+        </section>
+      </div>
+      
 </body>
 </html>
